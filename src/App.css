@@ -31,6 +31,7 @@ li{
 
 body > div, body > div > div{
     height: 100%;
+    width: 100%;
 }
 
 .page-wrapper{
@@ -62,6 +63,7 @@ body > div, body > div > div{
     width: 100%;
     display: flex;
     justify-self: center;
+    
 }
 
 .nav-bar a{
@@ -95,20 +97,21 @@ body > div, body > div > div{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 0px;
+    width: 350px;
     position: fixed;
-    right: 0;
+    left: 100%;
     top: 10.09%;
     align-self: center;
-    border-top: #ff0000;
-    transition: all 0.3s ease-in-out;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.columna.open{
+    transform: translateX(0);
 }
 
 aside > ul{
     position: relative;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
     transition: all 0.3s ease-in-out;
     font-size: 200%;
     display: flex;
@@ -117,6 +120,7 @@ aside > ul{
     flex-direction: column;
     width: 100%;
     height: 45%;
+    padding-top: 60px;
 }
 
 aside > ul > li:hover{

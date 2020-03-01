@@ -6,37 +6,32 @@ import './App.css';
 import Header from './header';
 import Footer from './footer';
 //import { Button } from '../node_modules/react-bootstrap';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap/';
+import { Button } from 'react-bootstrap/';
+import Column from './column';
+import Navv from './nav';
 
 
 class App extends React.Component{
 
   state = {
-    tasks: tasks
+    sideDrawerOpen: false,
+  }
+
+  drawerToggleClickHandler = () =>{
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    })
+
   }
 
   render(){
     return <div>
-    <Header/>
+    <Header drawerClickHandler={this.drawerToggleClickHandler}/>
       <Router>
-        <nav className="nav-bar">
-          <Navbar bg="dark" variant="dark">
-          <Link className="Link" id="home" to="/"><Navbar.Brand id="navlog">Game</Navbar.Brand></Link>
-            <Nav className="mr-auto">
-              <Link className="Link" id="home" to="/">Home</Link>
-              <Link className="Link" id="reg" to="/Reg">Register</Link>
-              
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-info">Search</Button>
-            </Form>
-          </Navbar>
-        </nav>
+        <Navv />
+        <Column show={this.state.sideDrawerOpen}/>
         <Route exact path="/" render={() => {
-          return <div className="page-wrapper">
-            <Tasks tareas={this.state.tasks}/>  
+          return <div className="page-wrapper">  
             <Button variant="primary">Primary</Button>        
           </div> 
         }}> 

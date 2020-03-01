@@ -32,10 +32,10 @@ header{
 }
 
 .usuari{
-    height: 20%;
+    height: 80px;
     position: absolute;
-    top: 0;
-    right: 40%;
+    top: 5%;
+    right: 35%;
 }
 
 .boton{
