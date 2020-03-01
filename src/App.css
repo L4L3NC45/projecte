@@ -1,0 +1,112 @@
+/*--------------Universal--------------*/
+
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'Lora', serif;
+}
+
+a {
+    font-size: 75%;
+    text-decoration: none;
+    color: grey;
+    outline: none;
+}
+
+a:link, a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: orange;
+}
+
+li{
+    list-style-type: none;
+}
+
+.page-wrapper{
+    min-height: 800px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+/*--------------Header--------------*/
+.nav-bar{
+    background: rgb(22, 56, 82);
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+}
+
+.nav-bar a{
+    padding-right: 10px;
+}
+
+
+.nav-bar a:visited{
+    color: white;
+}
+
+.nav-bar a:hover{
+    color: orange;
+}
+
+/*--------------Column--------------*/
+
+.columna{
+    background-color: #303036;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    right: 0;
+    top: 10.09%;
+    align-self: center;
+    border-top: #ff0000;
+    transition: all 0.3s ease-in-out;
+}
+
+aside > ul{
+    position: relative;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+}
+
+aside > ul > li:hover{
+    background-color: #3a3434d3;
+}
+
+aside > ul > li, aside > ul > span {
+    width: 87.5%;
+    text-align: center;
+    margin-top: 7.5%;
+}
+/*--------------Footer--------------*/
+
+/*-----------Responsive Section-----------*/
+
+@media screen and (max-width: 768px){
+    .columna, .column-content, aside{
+        width: 150px;
+    }
+    aside > ul > li, aside > ul > span {
+        font-size: 50%;
+    }
+    
+}
