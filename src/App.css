@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: grey;
     outline: none;
+    text-decoration: none;
 }
 
 a:link, a:visited{
@@ -21,18 +22,37 @@ a:link, a:visited{
 
 a:hover{
     color: orange;
+    text-decoration: none;
 }
 
 li{
     list-style-type: none;
 }
 
+body > div, body > div > div{
+    height: 100%;
+}
+
 .page-wrapper{
-    min-height: 800px;
-    margin-top: 25px;
+    min-height: 100%;
+    margin-top: 65px;
     margin-left: 10px;
 }
 
+#reg{
+    text-align: center;
+}
+
+.Link{
+    margin-top: 8px;
+    margin-right: 5px;
+    color: grey
+}
+
+.Link:visited{
+    color: #fff;
+    
+}
 
 /*--------------Header--------------*/
 .nav-bar{
@@ -46,17 +66,28 @@ li{
 
 .nav-bar a{
     padding-right: 10px;
+    
 }
 
 
 .nav-bar a:visited{
-    color: white;
+    color: #fff;
 }
 
 .nav-bar a:hover{
     color: orange;
+    outline: none;
+    
 }
 
+.nav-bar > nav{
+    width: 100%;
+}
+
+#navlog{
+    position: relative;
+    top: -6px;
+}
 /*--------------Column--------------*/
 
 .columna{
