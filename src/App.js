@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
 import tasks from './sample/task.json';
 import Tasks from './components/Tasks';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './App.css'
+import './App.css';
 import Header from './header';
-import Footer from './footer'
+import Footer from './footer';
+import Button from 'react-bootstrap/Button';
 
 class App extends React.Component{
 
@@ -22,7 +22,10 @@ class App extends React.Component{
           <Link id="reg" to="Reg">Register</Link>
         </nav>
         <Route exact path="/" render={() => {
-          return <div className="page-wrapper"><Tasks tareas={this.state.tasks}/></div> 
+          return <div className="page-wrapper">
+            <Tasks tareas={this.state.tasks}/><Button></Button>
+            
+          </div> 
         }}> 
         </Route>
         <Route exact path="/Reg" render={() => {
