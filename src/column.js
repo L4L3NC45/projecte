@@ -2,10 +2,10 @@ import React from 'react'
 import usu from './Icons/user.png'
 
 const Column = props => {
-    let drawerClasses = 'columna'
+    let drawerClasses = 'columna open'
 
     if(props.show){
-        drawerClasses = 'columna open'
+        drawerClasses = 'columna'
     }
 
     return (

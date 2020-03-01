@@ -5,6 +5,7 @@ header{
     color: #ffffff;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .header-content{
@@ -43,3 +44,11 @@ header{
     border: none;
 }
 
+@media screen and (max-width: 768px){
+    .usuari{
+        height: 50px;
+        top: 15%;
+        left: 40%;
+
+    }
+}

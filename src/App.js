@@ -9,6 +9,7 @@ import Footer from './footer';
 import { Button } from 'react-bootstrap/';
 import Column from './column';
 import Navv from './nav';
+import Register from './register';
 
 
 class App extends React.Component{
@@ -37,7 +38,9 @@ class App extends React.Component{
         }}> 
         </Route>
         <Route exact path="/Reg" render={() => {
-          return <div className="page-wrapper"><p>Pagina de registro</p></div> 
+          return <div className="page-wrapper">
+            <Register/>
+          </div> 
         }}> 
         </Route>
       </Router>
