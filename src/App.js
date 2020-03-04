@@ -24,7 +24,7 @@ class App extends React.Component{
     })
 
   }
-
+  
   render(){
     return <div>
     <Header drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -33,13 +33,19 @@ class App extends React.Component{
         <Column show={this.state.sideDrawerOpen}/>
         <Route exact path="/" render={() => {
           return <div className="page-wrapper">  
-            <Button variant="primary">Primary</Button>        
+            <h3 className="title" >Header</h3>       
           </div> 
         }}> 
         </Route>
         <Route exact path="/Reg" render={() => {
           return <div className="page-wrapper">
             <Register/>
+          </div> 
+        }}> 
+        </Route>
+        <Route exact path="/Help" render={() => {
+          return <div className="page-wrapper">
+        <h3>Ajuda</h3>
           </div> 
         }}> 
         </Route>

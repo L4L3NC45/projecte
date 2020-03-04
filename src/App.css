@@ -134,6 +134,12 @@ aside > ul > li, aside > ul > span {
     text-align: center;
     margin-top: 7.5%;
 }
+
+.title{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
 /*--------------Footer--------------*/
 
 /*-----------Responsive Section-----------*/

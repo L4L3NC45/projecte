@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <user num="1">
+      <email>Matthew@gmail.com</email>
+      <password>12345678</password>
+   </user>
+   <user num="2">
+      <email>Mateo@gmail.com</email>
+      <password>12345678</password>
+   </user>
+  </users>

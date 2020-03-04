@@ -11,7 +11,7 @@ class Footer extends Component{
             
             <div class="footer-section-about">
                 <ul>Interes:
-                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="/Help">Ajuda</a></li>
                     <li><a href="#">Nosaltres</a></li>
                 </ul>
             </div>
