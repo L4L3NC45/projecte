@@ -1,0 +1,153 @@
+/*--------------Universal--------------*/
+
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lora', serif;
+    background: rgb(46, 46, 46);
+}
+
+a {
+    font-size: 75%;
+    text-decoration: none;
+    color: grey;
+    outline: none;
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+body > div, body > div > div{
+    height: 100%;
+    width: 100%;
+}
+
+.page-wrapper{
+    min-height: 100%;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+
+#reg{
+    text-align: center;
+}
+
+.Link{
+    margin-top: 8px;
+    margin-right: 5px;
+    color: grey
+}
+
+.Link:visited{
+    color: #fff;
+    
+}
+
+/*--------------Header--------------*/
+.nav-bar{
+    background: rgb(22, 56, 82);
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    z-index: 10;
+    
+}
+
+.nav-bar a{
+    padding-right: 10px;
+    
+}
+
+
+.nav-bar a:visited{
+    color: #fff;
+}
+
+.nav-bar a:hover{
+    color: orange;
+    outline: none;
+    
+}
+
+.nav-bar > nav{
+    width: 100%;
+}
+
+#navlog{
+    position: relative;
+    top: -6px;
+}
+/*--------------Column--------------*/
+
+.columna{
+    background-color: #303036;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    left: 100%;
+    top: 10.09%;
+    align-self: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 20;
+}
+.columna.open{
+    transform: translateX(0);
+}
+
+aside > ul{
+    position: relative;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+    padding-top: 60px;
+}
+
+aside > ul > li:hover{
+    background-color: #3a3434d3;
+}
+
+aside > ul > li, aside > ul > span {
+    width: 87.5%;
+    text-align: center;
+    margin-top: 7.5%;
+}
+/*--------------Footer--------------*/
+
+/*-----------Responsive Section-----------*/
+
+@media screen and (max-width: 768px){
+    .columna, .column-content, aside{
+        width: 150px;
+    }
+    aside > ul > li, aside > ul > span {
+        font-size: 50%;
+    }
+    
+    .usuari{
+        height: 30px;
+
+    }
+}

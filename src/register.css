@@ -1,0 +1,27 @@
+.log{
+    width: 400px;
+    border-right: white solid 1px;
+    padding-right: 50px;
+}
+
+.check{
+    z-index: 0;
+}
+
+.log-reg-content{
+    padding-top: 100px;
+    padding-left: 50px;
+    color: white;
+    display: flex;
+    flex-flow: nowrap;
+    width: 100%;
+}
+
+.regist{
+    width: 400px;
+    padding-left: 60px;
+}
+
+ .summit{
+     margin-top: 20px;
+ }
