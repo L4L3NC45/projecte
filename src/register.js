@@ -1,8 +1,13 @@
 import React from 'react'
-import { Form, Button } from 'react-bootstrap/';
+import { Form, Button, Alert } from 'react-bootstrap/';
 import './register.css';
 
 export const Register = () => {
+
+    function alerta(){
+        alert("hello")
+    }
+
     return (
         <div className="log-reg-content">
             <div className="log">
@@ -48,7 +53,7 @@ export const Register = () => {
                     </Form.Group>
                     <Form.Label>User name</Form.Label>
                     <Form.Control className="UserName" placeholder="User name" />
-                    <Button className="summit" variant="primary" type="submit">
+                    <Button className="summit" variant="primary" type="submit" onClick={alerta}>
                         Submit
                     </Button>
                 </Form>

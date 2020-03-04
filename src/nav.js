@@ -17,7 +17,7 @@ export class Navv extends Component {
                 <Link className="Link" id="home" to="/">Home</Link>
                 <Link className="Link" id="reg" to="/Reg">Register</Link>
                 
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <Nav.Link href="/Help">Ajuda</Nav.Link>
               </Nav>
               <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
